@@ -1,0 +1,87 @@
+<!Doctype html>
+
+<html>
+
+<head>
+    <title>Student Admission Form</title>
+    <link rel="stylesheet" href="../styles/best-tutor.css">
+</head>
+
+<body onload="App_Start()">
+    <div class="menuBar">
+        <a href="./home.html" href="#Home">Home</a>
+        <a href="#Admission">Admission</a>
+        <a href="#Search">Search</a>
+        <a href="#ContactUs">Contactus</a>
+    </div>
+
+    <div class="heading">
+        <h2>Admission Form </h2>
+    </div>
+    <div class="container">
+        <div class="leftdiv">
+            <div class="textbox">
+                <span>First Name: </span>
+                <input type="text" id="fName">
+                <label id="lblMessage" style="visibility:hidden;">student not found</label>
+            </div>
+            <div class="textbox">
+                <span>Last Name: </span>
+                <input type="text" id="lName">
+            </div>
+            <div class="textbox">
+                <span>Date of Birth: </span>
+                <input type="date" id="DOB">
+            </div>
+            <div class="textbox">
+                <span> Gender: </span>
+                <select id="gender" name="gender">
+                    <option value="Please select">Please Select</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="textbox">
+                <span>Year in School: </span>
+                <input type="number" id="num">
+            </div>
+
+            <div class="textbox">
+                <span>Email:</span>
+                <input type="email" id="email">
+            </div>
+
+            <div class="textbox">
+                <span>Address: </span>
+                <textarea id="address" required></textarea>
+            </div>
+
+            <div class="textbox">
+                <span>Postcode: </span>
+                <input type="text" id="postcode" required>
+            </div>
+
+            <div class="textbox">
+                <span>Telephone: </span>
+                <input type="number" id="telephone" placeholder="xxx xxxx xxxx" required>
+            </div>
+
+            <div class="buttondiv">
+                <button class="sbutton" id="submit" value="submit"> Submit </button>
+                <button class="cbutton" id="cancel" value="cancel"> Cancel </button>
+            </div>
+
+        </div>
+
+        <div id="studentGrid" class="rightdiv">            
+        </div>
+
+    </div>
+
+
+    <script src="../js/best-tutor.js"></script>
+</body>
+
+</html>
